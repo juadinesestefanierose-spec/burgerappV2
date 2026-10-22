@@ -61,10 +61,6 @@ function Hero() {
         <p className="hero-description">{slide.description}</p>
       </div>
 
-      <button className="order-button" type="button">
-        ORDER NOW
-      </button>
-
       <div className="hero-indicators">
         {slides.map((_, index) => (
           <button

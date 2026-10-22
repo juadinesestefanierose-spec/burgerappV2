@@ -183,16 +183,47 @@
     border-right-color: var(--border);
   }
 }
+
 .product-row {
-  display: flex;
-    gap: 20px;
-   flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 30px;
+  background-color: #3a0808;
+  align-items: stretch;
 }
+
 body {
   background-color: rgb(54, 6, 6);
 }
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .product-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-row {
+    grid-template-columns: 1fr;
+  }
+}
+/* Phone-friendly burger menu */
+@media (max-width: 768px) {
+  .product-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .product-row {
+    grid-template-columns: 1fr;
+  }
 }

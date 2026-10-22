@@ -11,7 +11,6 @@ function Navbar({ cartCount, onCartClick  }) {
       <div className="navbar-links">
         <a href="#about">ABOUT</a>
         <a href="#menu">OUR MENU</a>
-        <a href="#shop">SHOP</a>
         <a href="#contact">CONTACT</a>
 
         <div className="cart" onClick={onCartClick}>

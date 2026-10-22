@@ -102,3 +102,63 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+/* Cart customization details */
+.cart-customizations {
+  margin: 8px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.cart-customizations strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.cart-customizations p {
+  margin: 3px 0;
+  font-weight: normal;
+}
+
+.cart-drink {
+  font-size: 13px;
+  font-weight: normal !important;
+  color: #555;
+}
+
+/* Keep the cart usable on phones */
+.cart-box {
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .cart-box {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-width: none;
+    max-height: calc(100dvh - 20px);
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .cart-item {
+    gap: 10px;
+  }
+
+  .cart-item img {
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+  }
+
+  .cart-item-info h3 {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .cart-total {
+    font-size: 16px;
+  }
+}

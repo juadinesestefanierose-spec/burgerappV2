@@ -109,3 +109,15 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+html,
+body,
+#root,
+button,
+a,
+[role="button"],
+input,
+select,
+textarea {
+  cursor: url("./assets/dinocursor.png") 4 4, pointer;
+}
