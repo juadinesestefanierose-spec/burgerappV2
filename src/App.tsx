@@ -231,7 +231,7 @@ onAddToCart={(product: Product & {
   onCheckout={() => {
     setIsCartOpen(false)
     setIsCheckoutOpen(true)
-    const [orderMessage, setOrderMessage] = useState('')
+    
   }}
 />
 )}
